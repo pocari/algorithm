@@ -9,6 +9,6 @@ def tribonacchi(n)
   end
 end
 
-0.upto(9) do |i|
+0.upto(30) do |i|
   p [i, tribonacchi(i)]
 end
