@@ -21,6 +21,7 @@ def main
     end
   end
 
+  p [:dp, dp]
   p dp[n-1]
 end
 
