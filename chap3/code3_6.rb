@@ -2,7 +2,8 @@ def read_int
   gets.chomp.to_i
 end
 
-def gen_patterns_helper(values, i, size, acc, &b) if i == size
+def gen_patterns_helper(values, i, size, acc, &b)
+  if i == size
     b.call(acc)
   else
     val = values[i]
