@@ -43,14 +43,14 @@ def main
 
   puts dp[n][total_w]
 
-  # weight = 0
-  # value = 0
-  # choice(dp, v, w, n, total_w).each do |i|
-  #   weight += w[i]
-  #   value += v[i]
-  #   puts "商品#{i} (重さ: #{w[i]}, 価値: #{v[i]})"
-  # end
-  # puts "トータル 重さ: #{weight}, 価値: #{value}"
+  weight = 0
+  value = 0
+  choice(dp, v, w, n, total_w).each do |i|
+    weight += w[i]
+    value += v[i]
+    puts "商品#{i} (重さ: #{w[i]}, 価値: #{v[i]})"
+  end
+  puts "トータル 重さ: #{weight}, 価値: #{value}"
 end
 
 main
